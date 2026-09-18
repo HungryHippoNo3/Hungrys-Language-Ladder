@@ -1,0 +1,5 @@
+[
+	["English", "Dutch", "German", "Danish", "Norwegian", "Swedish", "French", "Italian", "Romanian", "Spanish", "Croatian", "Czech", "Polish", "Russian", "Greek", "Hindi", "Persian", "Finnish", "Hungarian", "Turkish", "Japanese", "Korean", "Chinese"],
+	["Water", "Water", "Wasser", "Vand", "Vann", "Vatten", "Eau", "Acqua", "Apă", "Agua", "Voda", "Voda", "Woda", "Вода (voda)", "Νερό (nero)", "पानी (pani)", "آب (ab)", "Vesi", "Víz", "Su", "水 (mizu)", "물 (mul)", "水 (shuǐ)"],
+	["Milk", "Melk", "Milch", "Mælk", "Melk", "Mjölk", "Lait", "Latte", "Lapte", "Leche", "Mlijeko", "Mléko", "Mleko", "Молоко (moloko)", "Γάλα (gala)", "दूध (doodh)", "شیر (shir)", "Maito", "Tej", "Süt", "牛乳 (gyūnyū)", "우유 (uyu)", "牛奶 (niúnǎi)"]
+]
