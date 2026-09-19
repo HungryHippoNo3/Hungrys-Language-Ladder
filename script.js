@@ -11,6 +11,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
         const hint1 = dictionary[0][language1Index] + ": " + dictionary[randomRowIndex][language1Index];
 
-        document.querySelector("hint-1").textContent = hint1;
+        document.querySelector(".hint-1").textContent = hint1;
     });
 });
