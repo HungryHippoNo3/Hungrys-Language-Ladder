@@ -26,29 +26,4 @@ window.addEventListener("DOMContentLoaded", () => {
         const hint8 = dictionary[0][language8Index] + ": " + dictionary[randomRowIndex][language8Index];
 
         document.querySelector(".hint-1").textContent = hint1;
-
-        document.querySelector(".button").addEventListener("click", () => {
-            const userInput = document.querySelector(".input").value.trim().toLowerCase();
-
-            const validNounCheck = dictionary.some(row => row[0].toLowerCase() === userInput);
-
-            const gameLadder = document.getElementById("game-ladder");
-
-            function createLadderRung(text) {
-                const rung = document.createElement("div");
-                rung.classList.add("ladder-rung");
-
-                box.textContent = text;
-                gameLadder.appendChild(rung);
-            }
-
-            if (validNounCheck) {
-                if (userInput === noun) {
-                    console.log("Correct! The noun is: " + noun);
-                } else {
-                    createLadderRung("❌ That is not the correct noun.");
-                    }
-            } else {
-                document.querySelector(".textbox").value = "Invalid guess.";
-        }});
 })});
