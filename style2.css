@@ -79,6 +79,16 @@
     cursor: pointer;
     color: white;
 }
+@media (max-width: 600px) {
+    .textbox{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    .button{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
 .hint-1{
     width: 80%;
     max-width: 600px;
