@@ -1,63 +1,52 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-/* Background */
 .background{
     min-height: 100vh;
     width: 100%;
     background: rgb(30, 30, 30);
 }
-
-/* Header */
 .header{
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px; /* smaller for mobile */
+    top: 0px;
+    left: 0px;
+    width: calc(100dvw - 5px);
+    height: 100px;
     background-color: rgb(25, 25, 25);
-    border-bottom: 3px solid gainsboro;
-    border-radius: 0 0 20px 20px;
+    border: 3px solid gainsboro;
+    border-radius: 0px 0px 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2;
 }
-
 .header h1{
     font-family: Candara;
-    font-size: 36px; /* scaled down for mobile */
+    font-size: 64px;
+    text-align: center;
     color: white;
 }
-
-/* Sidebar */
 .sidebar{
     position: fixed;
-    top: 80px; /* below header */
-    left: 0;
-    width: 80px; /* smaller for mobile */
-    height: calc(100vh - 80px);
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: calc(100dvh - 5px);
     background-color: rgb(25, 25, 25);
-    border-right: 3px solid gainsboro;
+    border: 3px solid gainsboro;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     z-index: 1;
 }
-
-/* Content area */
 .content{
-    margin-top: 80px; /* match header height */
-    margin-left: 80px; /* match sidebar width */
+    position: relative;
     padding: 20px;
 }
-
-/* Input container */
 .input{
-    width: 100%;
+    top: 120px;
+    width: 80%;
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
@@ -65,15 +54,13 @@
     border: 10px double gainsboro;
     border-radius: 20px;
     display: flex;
-    flex-direction: column; /* stack on mobile */
     gap: 10px;
-    align-items: stretch;
+    align-items: center;
 }
-
-/* Textbox */
 .textbox{
-    width: 100%;
-    padding: 12px 15px;
+    top: 120px;
+    flex: 1;
+    padding: 10px 15px;
     background: rgb(30, 30, 30);
     border: 4px solid gainsboro;
     border-radius: 10px;
@@ -81,11 +68,8 @@
     font-size: 18px;
     color: white;
 }
-
-/* Button */
-.button{
-    width: 100%;
-    padding: 12px 20px;
+.button{ top: 120px;
+    padding: 10px 20px;
     background-color: rgb(25, 25, 25);
     border: 4px solid gainsboro;
     border-radius: 10px;
@@ -94,10 +78,8 @@
     cursor: pointer;
     color: white;
 }
-
-/* Hint box */
 .hint-1{
-    width: 100%;
+    width: 80%;
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
@@ -108,11 +90,9 @@
     font-size: 18px;
     color: white;
     display: flex;
-    flex-direction: column; /* stack on mobile */
     gap: 10px;
+    align-items: center;
 }
-
-/* Footer */
 .footer{
     margin-top: 60px;
     padding: 10px;
@@ -120,27 +100,4 @@
     font-size: 14px;
     text-align: center;
     color: white;
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 600px){
-
-    .header{
-        height: 70px;
-    }
-
-    .header h1{
-        font-size: 28px;
-    }
-
-    .sidebar{
-        width: 60px;
-        top: 70px;
-        height: calc(100vh - 70px);
-    }
-
-    .content{
-        margin-left: 60px;
-        margin-top: 70px;
-    }
 }
