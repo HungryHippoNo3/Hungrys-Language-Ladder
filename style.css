@@ -89,6 +89,21 @@
         padding: 8px 12px;
     }
 }
+.game-ladder{
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(25, 25, 25);
+    border: 4px solid gainsboro;
+    border-radius: 10px;
+    font-family: Candara;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 .hint-1{
     width: 80%;
     max-width: 600px;
