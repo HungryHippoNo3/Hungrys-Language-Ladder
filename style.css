@@ -23,10 +23,10 @@
 }
 .header h1{
     font-family: Candara;
-    font-size: 64px;
+    font-size: clamp(28px, 8vw, 64px);
     text-align: center;
     color: white;
-}
+}/*
 .sidebar{
     position: fixed;
     top: 0px;
@@ -39,10 +39,10 @@
     justify-content: left;
     align-items: center;
     z-index: 1;
-}
+}*/
 .content{
     position: relative;
-    margin-top: 100px;
+    top: 100px;
     padding: 20px;
 }
 .input{
@@ -58,6 +58,7 @@
     align-items: center;
 }
 .textbox{
+    width: 100%;
     flex: 1;
     padding: 10px 15px;
     background: rgb(30, 30, 30);
@@ -67,7 +68,8 @@
     font-size: 18px;
     color: white;
 }
-.button{
+.button{ 
+    width: 100px;
     padding: 10px 20px;
     background-color: rgb(25, 25, 25);
     border: 4px solid gainsboro;
@@ -76,6 +78,16 @@
     font-size: 18px;
     cursor: pointer;
     color: white;
+}
+@media (max-width: 600px) {
+    .textbox{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    .button{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
 }
 .hint-1{
     width: 80%;
@@ -93,7 +105,6 @@
     align-items: center;
 }
 .footer{
-    margin-top: 60px;
     padding: 10px;
     font-family: Candara;
     font-size: 14px;
