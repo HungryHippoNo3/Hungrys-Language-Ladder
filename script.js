@@ -11,6 +11,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
         const hint1 = string(dictionary[0][language1Index]) + ": " + string(dictionary[randomRowIndex][language1Index]);
 
+        console.log("Random Row Index:", randomRowIndex);
+        console.log("Noun:", noun);
+        console.log("Language 1 Index:", language1Index);
+        console.log("Hint 1:", hint1);
+
         document.querySelector(".hint-1").textContent = hint1;
     });
 });
