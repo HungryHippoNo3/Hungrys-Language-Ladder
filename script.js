@@ -54,6 +54,8 @@ window.addEventListener("DOMContentLoaded", () => {
         } else {
             alert("Not a valid guess");
         }
+
+        textbox.value = "";
     });
 
 });
