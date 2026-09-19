@@ -23,7 +23,7 @@
 }
 .header h1{
     font-family: Candara;
-    font-size: clamp(28px, 8w, 64px);
+    font-size: clamp(28px, 8vw, 64px);
     text-align: center;
     color: white;
 }
