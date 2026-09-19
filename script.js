@@ -39,6 +39,8 @@ window.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
         const guessInput = textbox.value.trim().toLowerCase();
 
+        textbox.value = "";
+
         const guessValidation = dictionary.some(
             row => row[0].toLowerCase() === guessInput
         );
@@ -55,7 +57,6 @@ window.addEventListener("DOMContentLoaded", () => {
             alert("Not a valid guess");
         }
 
-        textbox.value = "";
     });
 
 });
