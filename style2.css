@@ -42,10 +42,10 @@
 }
 .content{
     position: relative;
+    top: 100px;
     padding: 20px;
 }
 .input{
-    top: 120px;
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
@@ -58,7 +58,6 @@
     align-items: center;
 }
 .textbox{
-    top: 120px;
     flex: 1;
     padding: 10px 15px;
     background: rgb(30, 30, 30);
@@ -68,7 +67,7 @@
     font-size: 18px;
     color: white;
 }
-.button{ top: 120px;
+.button{ 
     padding: 10px 20px;
     background-color: rgb(25, 25, 25);
     border: 4px solid gainsboro;
